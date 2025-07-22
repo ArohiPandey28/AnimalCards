@@ -1,0 +1,105 @@
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+}
+
+.card {
+    padding: 20px;
+    background-color: rgba(199, 96, 123, 0.573);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+    border: 2px #c7607b solid;
+    color: rgb(40, 39, 39);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px rgba(199, 96, 123, 0.15);
+}
+
+.card:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 15px 40px rgba(199, 96, 123, 0.35);
+    background-color: rgba(199, 96, 123, 0.35);
+    border-color: #d4749a;
+}
+
+img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover img {
+    transform: scale(1.03);
+}
+
+h3 {
+    background-color: rgba(199, 96, 123, 0.15);
+    padding: 12px 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 22px;
+    color: rgb(35, 35, 35);
+    margin: 15px 0 5px 0;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(5px);
+}
+
+.card:hover h3 {
+    background-color: rgba(199, 96, 123, 0.3);
+    transform: scale(1.02);
+}
+
+.tags {
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+span {
+    background-color: rgba(199, 96, 123, 0.1);
+    padding: 8px 12px;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(3px);
+}
+
+.card:hover span {
+    background-color: rgba(199, 96, 123, 0.25);
+    transform: scale(1.05);
+}
+
+p {
+    background-color: rgba(199, 96, 123, 0.08);
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(3px);
+}
+
+.card:hover p {
+    background-color: rgba(199, 96, 123, 0.2);
+}
+
+body {
+    background-color: #ffe0ec;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
